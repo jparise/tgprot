@@ -1,0 +1,14 @@
+PROTOCOL    HydraCom
+BATCH       Y
+BIDIRECT    Y
+UPLOAD      HydraCom port ~CP line ~CA receive ~PT\File get ~PF
+DOWNLOAD    HydraCom port ~CP line ~CA receive ~PT\File send ~PF
+ULCODE1      H
+DLCODE1      h
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\TRANSFER.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     Y
+

@@ -1,0 +1,81 @@
+PROTOCOL    Zmodem 8k
+BATCH       Y
+BIDIRECT    N
+UPLOAD      cexyz -p~CP -b~CB -l~CA -n~UF_~UL -rzap ~PF
+DOWNLOAD    cexyz -p~CP -b~CB -l~CA -n~UF_~UL -szap ~PF
+ULCODE1      Z
+ULCODE2      z
+ULCODE3      z
+DLCODE1      Z
+DLCODE2      z
+DLCODE3      z
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\TRANSFER.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     Y
+
+PROTOCOL    Ymodem-G
+BATCH       Y
+BIDIRECT    N
+UPLOAD      cexyz -p~CP -b~CB -l~CA -n~UF_~UL -ryg ~PF
+DOWNLOAD    cexyz -p~CP -b~CB -l~CA -n~UF_~UL -syg ~PF
+ULCODE1      R
+ULCODE2      r
+ULCODE3      r
+DLCODE1      S
+DLCODE2      s
+DLCODE3      s
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\TRANSFER.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     Y
+
+PROTOCOL    Xmodem
+BATCH       N
+UPLOAD      cexyz -p~CP -b~CB -l~CA -n~UF_~UL -rx ~PF
+DOWNLOAD    cexyz -p~CP -b~CB -l~CA -n~UF_~UL -sx ~PF
+ULCODE1      0
+DLCODE1      0
+ENVIRONMENT 
+SUCCESS     Y
+
+PROTOCOL    Ymodem
+BATCH       Y
+BIDIRECT    N
+UPLOAD      cexyz -p~CP -b~CB -l~CA -n~UF_~UL -ry ~PF
+DOWNLOAD    cexyz -p~CP -b~CB -l~CA -n~UF_~UL -sy ~PF
+ULCODE1      R
+ULCODE2      r
+ULCODE3      r
+DLCODE1      S
+DLCODE2      s
+DLCODE3      s
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\TRANSFER.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     Y
+
+PROTOCOL    Zmodem
+BATCH       Y
+BIDIRECT    N
+UPLOAD      cexyz -p~CP -b~CB -l~CA -n~UF_~UL -rz ~PF
+DOWNLOAD    cexyz -p~CP -b~CB -l~CA -n~UF_~UL -sz ~PF
+ULCODE1      z
+ULCODE2      Z
+ULCODE3      z
+DLCODE1      Z
+DLCODE2      z
+DLCODE3      z
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\TRANSFER.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     Y
+

@@ -1,0 +1,134 @@
+
+    The Telegard 3.0+ Protocol Pack
+    Release 1.1    (April 13, 1997)
+    Compiled by Jon Parise [Yankee]
+    
+
+ÚÄ--Introduction
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+    A few months ago I got into a protocol kick where I wanted to evaluate
+all those protocols that everyone talks about but hardly ever use.  If you're
+a SysOp, you probably have all the oldies-but-goodies protocols setup, such
+as Xmodem, Ymodem, and Zmodem, with the occasional variation.  You're also
+probably using a copy of DSZ or GSZ as your protocol driver because Telegard
+includes them in its default configuration.
+    In addition to these common transfer protocols, there are numerous other
+protocol drivers out there.  Some have a specific niche while others are
+simply overhauled versions of DSZ/GSZ.
+    The purpose of The Telegard Protocol Pack is to save Telegard SysOp's
+some time in evaluating a protocol's abilities and then getting the damn thing
+to work right by setting it up, calling remotely, testing, and debugging.  I
+have been there before, and I'm sure most of you have, too.  A SysOp's time
+can better be spent elsewhere.
+
+
+ÚÄ--Disclaimer
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+    There are no warranties or guarantees to be found here.  If it doesn't
+work for you, there isn't anyone for you to blame.
+
+
+ÚÄ--Installation
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+    All protocol settings are released as .PDF's, Telegard's protocol
+definition file format.  Move all the .PDF's in this archive into your
+Telegard data directory (i.e. \Telegard\Data)  To import these settings into
+your configuration, go to the System Manager->Protocol Manager and insert a
+new protocol using whatever command letter you like.  Hit '!' and then
+'I'mport a protocol definition file.  Enter the name of the .PDF you would
+like to import, select the protocol, and you're all configured.
+    The next step is to install the actual file transfer protocol.  That
+procedure is currently beyond the scope of this document but, basically,
+locate the protocol driver and install it into you \Telegard\Protocol
+directory, where Telegard will look for it.
+
+
+ÚÄ--Included Protocols
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+    CEXYZ.PDF       Cutting Edge File Transfer Protocol
+                    Xmodem, Ymodem, Ymodem-G, Zmodem, ZedZap
+                    Contributed by:     Jon Parise
+
+    PDZ.PDF         Public Domain Zmodem with Chat
+                    Zmodem, ZedZap
+                    Contributed by:     mav@microserve.net
+
+    HYDRACOM.PDF    HydraCom Bidirectonal Transfer Protocol with Chat
+                    HydraCom
+                    Contributed by:     Jon Parise
+
+    SMODEM.PDF      Smodem Bidirectional Transfer Protocol with Chat
+                    Smodem
+                    Contributed by:     Jon Parise
+                    Originally posted in TG_SUPPORT (Fido)
+
+    HSLINK.PDF      HS/Link Bidirectional Transfer Protocol
+                    HS/Link
+                    Contributed by:     Darryl Clarke
+
+    ICEZ.PDF        IceZmodem with Chat, Dos, Editor, Games, Music
+                    Zmodem
+                    Contributed by:     Darryl Clarke
+
+
+    VMODEM.MDF      Vmodem (Virtual Modem) Telnet Protocol Driver
+                    Not exactly a transfer protocol, but included nonetheless
+                    Contributed by:     Jon Parise
+                    Originally by:      Michael Thorndyke
+
+
+ÚÄ--Protocol Notes
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+  CE-XYZ
+  ~~~~~~
+   CE-XYZ is available in Dos and OS/2 flavours.  The included .PDF supports
+   the Dos version but the OS/2 version shouldn't be very much different
+   (cexyz2.exe instead of cexyz.exe, I believe)
+
+  PDZmodem
+  ~~~~~~~~
+   This protocol definition includes the '-os2' parameter for OS/2 optimized
+   file transfers.  This can be changed to '-dv' for enhanced performance
+   under DesqView.
+
+  Vmodem
+  ~~~~~~
+   Vmodem is distributed with Ray Gwinn's SIO serial comm drivers for OS/2.
+   It is used to emulate a 'virtual' modem port for telnet connections using
+   OS/2's TCP/IP stack.
+
+
+ÚÄ--Credits
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+ CE-XYZ, copyright 1993 by Cutting Edge Computing
+ Public Domain Zmodem, copyright 1994-95 by Peter Mandrella
+ HydraCom, copyright 1991-93 by Arjen G. Lentz, Lentz Software-Development
+ Smodem, copyright 1994 by AriSoft Oy
+ HS/Link, copyright 1991, 1992, 1993 by Samuel H. Smith
+ IceZmodem, copyright 1995 by IceSoft Software
+ Vmodem, copyright 1995 by Raymond L. Gwinn
+
+ÚÄ--Closing
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ--ú ú   ú
+
+    It's a small but quality offering.  I'm always looking for more protocol
+submissions so, if you have a Telegard-tested protocol you would like to
+share, I can be reached at :
+
+            Email: jon@world2u.com
+
+            Infinite Twilight
+            (908) 637-8243
+            USRobotics Sportster 33.6 v34+
+            FidoNet: 1:2606/421
+            50h Net: 101:300/400
+            IVnet:   411:200/20
+            STNnet:  111:4908/0
+
+                                                    Jon Parise

@@ -1,0 +1,16 @@
+PROTOCOL    Smodem
+BATCH       Y
+BIDIRECT    Y
+UPLOAD      Smodem /+ /p:~CP /s:~CL /E:2 /g /d ~PF
+DOWNLOAD    Smodem /+ /r /p:~CP /s:~CL /E:2 /g /u ~PF /d ~PT\UL
+ULCODE1      E
+ULCODE2      L
+DLCODE1      E
+DLCODE2      L
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\TRANSFER.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     N
+

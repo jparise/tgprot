@@ -1,0 +1,16 @@
+PROTOCOL    PDZmodem
+BATCH       Y
+BIDIRECT    N
+UPLOAD      zm rz -f -c~CP -q -dv -b~CA -nochat ~PF
+DOWNLOAD    zm sz -f -c~CP -q -dv -b~CA -nochat ~PF
+ULCODE1      E
+ULCODE2      L
+DLCODE1      e
+DLCODE2      l
+ENVIRONMENT set dszlog=~PL
+TEMPLOG     ~PT\DSZ.LOG
+FILELIST    @
+LOG_FILE    11
+LOG_RESULT  1
+SUCCESS     N
+
